@@ -1,0 +1,7 @@
+{
+  "bind": "localhost:10000",
+  "proxy": "localhost:6379",
+  "tees": [
+    "localhost:6380"
+  ]
+}
