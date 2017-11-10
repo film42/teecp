@@ -26,7 +26,7 @@ Here's an example config file:
   "bind": "localhost:10000",
   "proxy": "localhost:6379",
   "tees": [
-    "corvus_session:6380",
+    "corvus_session:6380"
   ]
 }
 ```
