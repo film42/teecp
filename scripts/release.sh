@@ -2,7 +2,6 @@
 set -x
 
 rm -rf pkg/
-mkfile pkg
 
 GOOS=darwin GOARCH=amd64 go build -o pkg/teecp-darwin-amd64 
 GOOS=windows GOARCH=amd64 go build -o pkg/teecp-windows-amd64.exe 
