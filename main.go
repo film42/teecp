@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"flag"
+	"fmt"
 	"os"
 )
 
@@ -17,7 +18,13 @@ func main() {
 
 	configPathPtr := flag.String("config", "config.json", "Path to the teecp config.")
 	debugPtr := flag.Bool("debug", false, "Enable debug logging.")
+	versionPtr := flag.Bool("version", false, "Print the teecp version and exit.")
 	flag.Parse()
+
+	if *versionPtr {
+		fmt.Println("1.0.0")
+		return
+	}
 
 	if !(*debugPtr) {
 		DisableDebugLogging()
